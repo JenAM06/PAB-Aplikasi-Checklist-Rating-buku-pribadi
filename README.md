@@ -292,6 +292,28 @@ class HomePage extends StatelessWidget {
 <details>
     <summary> Deskripsi Implementasi Widget </summary>
 
+### 1. `OutlinedButton`
+
+**Penjelasan:** Tombol hapus buku di `DetailPage` menggunakan border merah tanpa fill untuk membedakannya secara visual dari aksi primer. _Widget_ tambahan agar tidak terlalu mencolok dibandingkan tombol utama (seperti ElevatedButton).
+
+```dart
+OutlinedButton.icon(
+  onPressed: () => _konfirmasiHapus(context, book),
+  style: OutlinedButton.styleFrom(
+    foregroundColor: Colors.redAccent,
+    side: const BorderSide(color: Colors.redAccent),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+  ),
+  icon: const Icon(Icons.delete_outline),
+  label: const Text('Hapus Buku'),
+),
+```
+
+---
+
+</details>
+
+## Form Page
 
 
 
