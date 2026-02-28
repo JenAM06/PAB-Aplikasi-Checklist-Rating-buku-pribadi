@@ -1,6 +1,8 @@
 # JEJE BookShelf
 
-Aplikasi manajemen koleksi buku pribadi mencatat, melacak progress membaca, dan memberikan rating pada setiap buku yang dimiliki. Disini saya tetap bisa memberikan rating dan catatan walaupun progres membaca saya belum selesai ^^
+Aplikasi manajemen koleksi buku pribadi untuk mencatat, melacak progress membaca, dan memberikan rating pada setiap buku yang dimiliki. Disini saya tetap bisa memberikan rating dan catatan walaupun progres membaca saya belum selesai ^^
+
+> Jen Agresia Misti | 2409116007 | A'24 | MINPRO 1 PAB
 
 ---
 
@@ -51,7 +53,9 @@ lib/
 
 ## Home Page
 
-> *Tambahkan screenshot aplikasi di sini*
+> Saya jelaskan alur disini ദ്ദി◝ ⩊ ◜.ᐟ
+
+Pada tampilan awal, sudah diperlihatkan pada AppBar ada nama aplikasi dan jumlah buku di sudut kanan atas. Juga ada tulisan bahwa belum ada widget 'card' atau simpelnya tampilan buku pribadi saya. Klik tanda `+` sebagai **fitur** `Create` agar halaman menuju `Form page`. Hasil `Create` akan mengembalikan pada halaman _home page_ dan saya juga bisa menggunakan **fitur** `hapus` dengan klik ikon tong sampah pada sudut kanan tiap card buku yang telah dibuat.
 
 | Kosongan | Tambah Buku | Hapus Buku |
 |----------|------------|-----------|
@@ -106,7 +110,7 @@ ClipRRect(
 
 ### 4. `Scaffold` & `AppBar`
 
-**Penjelasan:** Kerangka untuk `AppBar`, `body`, dan `floatingActionButton`. Semua halaman (`HomePage`, `DetailPage`, `FormPage`) menggunakan `Scaffold`. Widget `AppBar` navigasi di bagian atas halaman. Menampilkan judul halaman, tombol kembali otomatis atau aksi tambahan seperti tombol edit. Di home page, isinya ada judul aplikasi dan jumlah buku yang disimpan di sudut kanan atas.
+**Penjelasan:** Kerangka untuk `AppBar`, `body`, dan `floatingActionButton`. Semua halaman (`HomePage`, `DetailPage`, `FormPage`) menggunakan `Scaffold`. Widget `AppBar` adalah navigasi di bagian atas halaman. Menampilkan judul halaman, tombol kembali otomatis atau aksi tambahan seperti tombol edit. Di home page, isinya ada judul aplikasi dan jumlah buku yang disimpan di sudut kanan atas.
 
 ```dart
 return Scaffold(
@@ -209,7 +213,6 @@ ListView.builder(
 ---
 
 ### 9. `Wrap`
-**Kategori:** 📐 Layout
 
 **Penjelasan:** Menyusun chip genre secara horizontal dan otomatis pindah ke baris berikutnya jika tidak cukup ruang. Jadi isi teks selanjutnya dibungkus row lagi.
 
@@ -240,6 +243,7 @@ Card(
         ),
 
 ```
+
 ### 10. `Navigator.pop`. `TextButton`, `AlertDialog`
 
 **Penjelasan:**`pop` kembali ke halaman sebelumnya, di _home page_ digunakan untuk membatalkan buku yang akan dihapus lalu kembali pada _home page_. `TextButton` adalah Tombol tanpa latar belakang ("Hapus" dan "Batal"). `AlertDialog` yaitu Dialog konfirmasi sebelum menghapus buku. Digunakan di dua tempat (`HomePage` dan `DetailPage`) untuk mencegah penghapusan tidak sengaja.
@@ -276,6 +280,40 @@ class HomePage extends StatelessWidget {
   }
 }
 ```
+---
+
+### 12. `SnackBar`
+
+**Penjelasan:** Notifikasi ringan di bagian bawah layar setelah aksi berhasil atau gagal validasi. Menggunakan `SnackBarBehavior.floating` agar terlihat melayang.
+
+```dart
+ScaffoldMessenger.of(context).showSnackBar(
+  SnackBar(
+    content: const Text('Buku berhasil ditambahkan!'),
+    backgroundColor: const Color(0xFF9B6BFF),
+    behavior: SnackBarBehavior.floating,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+  ),
+);
+```
+
+---
+
+### 13. `FloatingActionButton.extended`
+
+**Penjelasan:** Tombol aksi utama di `HomePage` untuk navigasi ke halaman tambah buku. Versi *extended* menampilkan ikon dan label teks secara bersamaan.
+
+```dart
+FloatingActionButton.extended(
+  backgroundColor: const Color(0xFF9B6BFF),
+  onPressed: () => Navigator.push(
+    context,
+    MaterialPageRoute(builder: (_) => const FormPage()),
+  ),
+  icon: const Icon(Icons.add, color: Colors.white),
+  label: const Text('Tambah Buku'),
+),
+```
 
 ---
 
@@ -283,7 +321,9 @@ class HomePage extends StatelessWidget {
 
 ## Detail Page
 
-> *Tambahkan screenshot aplikasi di sini*
+> Saya jelaskan alur disini ◝(ᵔᗜᵔ)◜
+
+Halaman detail bisa diakses dengan klik card buku yang sudah dibuat. Detail memperlihat catatan atau review yang tidak diperlihatkan pada homepage. Halaman detail sebagai tempat pilihan untuk **fitur** `edit` (klik ikon pensil sudut kanan atas) atau menghapus buku yang telah dipilih. **Fitur** `hapus` di halaman detail sengaja tidak dibuat mencolok agar saya sendiri juga bisa fokus pada detail dari isi buku-bukunya
 
 | Tampilan | Tampilan Hapus | Hapus Buku | Balik Home Page |
 |----------|------------|-----------|-----------|
@@ -315,6 +355,89 @@ OutlinedButton.icon(
 
 ## Form Page
 
+| Tampilan | Tampilan Isi | Validasi (1) | Validasi(2) | Balik ke Home page
+|----------|------------|-----------|-----------|-----------|
+| <img src="https://github.com/user-attachments/assets/2d9a4e9e-f37d-4a4e-9eae-c89c8d032586" width="150"/> |<img src="https://github.com/user-attachments/assets/7b339667-a1b6-48a6-98de-6632ef3898b6" width="150"/> | <img src="https://github.com/user-attachments/assets/29bce5db-6fbf-4bbe-a2f0-a2a4602af254" width="150"/> | <img src="https://github.com/user-attachments/assets/d0bda3e3-6ded-4306-92d6-d7354693b3a4" width=150/>| <img src="https://github.com/user-attachments/assets/b1107d22-0922-49bd-a631-22659a6c3ec4"  width="150"/>
 
 
+<details>
+    <summary> Deskripsi Implementasi Widget </summary>
 
+### 1. `StatefulWidget`
+
+**Penjelasan:** Digunakan untuk `FormPage` karena perlu menyimpan state lokal: isi controller, daftar genre, dan nilai rating yang berubah saat pengguna mengisi form. Jadi tidak reload halaman, langsung update contohnya ikon bintang yang langsung _full_ kuning ketika dikllik.
+
+```dart
+class FormPage extends StatefulWidget {
+  final Book? bookToEdit;
+  const FormPage({super.key, this.bookToEdit});
+
+  @override
+  State createState() => _FormPageState();
+}
+```
+
+---
+
+### 2. `GestureDetector`
+
+**Penjelasan:** Mendeteksi tap pada setiap bintang rating dan tombol `+` genre. Lebih ringan dari `InkWell` karena tidak membutuhkan efek visual ripple.
+
+```dart
+GestureDetector(
+  onTap: () => setState(() => _rating = i + 1.0),
+  child: Icon(
+    i < _rating ? Icons.star : Icons.star_border,
+    color: const Color(0xFFFFD700),
+    size: 34,
+  ),
+),
+```
+
+---
+
+### 4. `ElevatedButton`
+
+**Penjelasan:** Tombol utama untuk menyimpan data buku di `FormPage` dengan background ungu sebagai yang paling menonjol.
+
+```dart
+ElevatedButton(
+  onPressed: _simpan,
+  style: ElevatedButton.styleFrom(
+    backgroundColor: const Color(0xFF9B6BFF),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+  ),
+  child: Text(
+    _isEditing ? 'Simpan Perubahan' : 'Tambah ke Koleksi',
+    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+  ),
+),
+```
+
+### 5. `TextFormField`
+
+**Penjelasan:** Input teks dengan dukungan validasi terintegrasi dalam `Form`. Digunakan untuk 6 input di `FormPage`, masing-masing dikonfigurasi melalui helper `_buildTextField()`.
+
+| # | Field | Tipe Input | Validasi |
+|---|-------|-----------|---------|
+| 1 | Judul | Teks | Wajib diisi |
+| 2 | Penulis | Teks | Wajib diisi |
+| 3 | Genre | Teks + tombol `+` | Min. 1 genre |
+| 4 | Total Halaman | Angka | Opsional |
+| 5 | Halaman Ke- | Angka | Tidak boleh > total |
+| 6 | Catatan | Multiline | Opsional |
+
+### 6. `Form` + `GlobalKey<FormState>`
+
+**Penjelasan:** Membungkus seluruh input di `FormPage` dalam satu unit validasi. `GlobalKey` digunakan untuk memicu validasi semua field sekaligus saat tombol simpan ditekan.
+
+```dart
+final _formKey = GlobalKey();
+
+// Saat simpan:
+if (!_formKey.currentState!.validate()) return;
+```
+
+---
+
+</details>
