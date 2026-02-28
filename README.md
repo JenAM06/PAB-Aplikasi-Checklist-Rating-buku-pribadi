@@ -359,7 +359,7 @@ OutlinedButton.icon(
 
 > Saya jelaskan alur disini („• ֊ •„)੭
 
-Halaman `Form` bisa diakses dari **fitur** `edit` di halaman `detail` atau dari fitur `create`. Terdapat 6 `TextFields` yang diisi (detailnya ada pada deskripsi widget) dan 2 **fitur** unik yaitu `progres membaca` dan `rating bintang`. Bar persen pada card di halaman page berasan dari jumlah halaman yang sudah kita baca dari total halaman buku, berguna jika kehilangan penanda buku atau sekedar melihat progres membaca. Saya juga dapat memberi rating dengan klik ikon bintang pada halaman `form`. Saya mengatur agar tetap bisa memberi rating walaupun belum 100% selesai membaca untuk mempertimbangkan jika sudah tidak ingin melanjutkan buku tersebut dan menaruh alasannya di catatan.
+Halaman `Form` bisa diakses dari **fitur** `edit` di halaman `detail` atau dari fitur `create`. Terdapat 6 `TextFields` yang diisi (detailnya ada pada deskripsi widget) dan 2 **fitur** unik yaitu `progres membaca` dan `rating bintang`. Bar persen pada card di halaman page berasal dari jumlah halaman yang sudah kita baca dari total halaman buku, berguna jika kehilangan penanda buku atau sekedar melihat progres membaca. Saya juga dapat memberi rating dengan klik ikon bintang pada halaman `form`. Saya mengatur agar tetap bisa memberi rating walaupun belum 100% selesai membaca untuk mempertimbangkan jika sudah tidak ingin melanjutkan buku tersebut dan menaruh alasannya di catatan.
 
 | Tampilan | Tampilan Isi | Validasi (1) | Validasi(2) | POV fitur edit | Balik ke Home page
 |----------|------------|-----------|-----------|-----------|-----------|
