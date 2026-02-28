@@ -355,9 +355,13 @@ OutlinedButton.icon(
 
 ## Form Page
 
-| Tampilan | Tampilan Isi | Validasi (1) | Validasi(2) | Balik ke Home page
-|----------|------------|-----------|-----------|-----------|
-| <img src="https://github.com/user-attachments/assets/2d9a4e9e-f37d-4a4e-9eae-c89c8d032586" width="150"/> |<img src="https://github.com/user-attachments/assets/7b339667-a1b6-48a6-98de-6632ef3898b6" width="150"/> | <img src="https://github.com/user-attachments/assets/29bce5db-6fbf-4bbe-a2f0-a2a4602af254" width="150"/> | <img src="https://github.com/user-attachments/assets/d0bda3e3-6ded-4306-92d6-d7354693b3a4" width=150/>| <img src="https://github.com/user-attachments/assets/b1107d22-0922-49bd-a631-22659a6c3ec4"  width="150"/>
+> Saya jelaskan alur disini („• ֊ •„)੭
+
+Halaman `Form` bisa diakses dari **fitur** `edit` di halaman `detail` atau dari fitur `create`. Terdapat 6 `TextFields` yang diisi (detailnya ada pada deskripsi widget) dan 2 **fitur** unik yaitu `progres membaca` dan `rating bintang`. Bar persen pada card di halaman page berasan dari jumlah halaman yang sudah kita baca dari total halaman buku, berguna jika kehilangan penanda buku atau sekedar melihat progres membaca. Saya juga dapat memberi rating dengan klik ikon bintang pada halaman `form`. Saya mengatur agar tetap bisa memberi rating walaupun belum 100% selesai membaca untuk mempertimbangkan jika sudah tidak ingin melanjutkan buku tersebut dan menaruh alasannya di catatan.
+
+| Tampilan | Tampilan Isi | Validasi (1) | Validasi(2) | POV fitur edit | Balik ke Home page
+|----------|------------|-----------|-----------|-----------|-----------|
+| <img src="https://github.com/user-attachments/assets/2d9a4e9e-f37d-4a4e-9eae-c89c8d032586" width="150"/> |<img src="https://github.com/user-attachments/assets/7b339667-a1b6-48a6-98de-6632ef3898b6" width="150"/> | <img src="https://github.com/user-attachments/assets/29bce5db-6fbf-4bbe-a2f0-a2a4602af254" width="150"/> | <img src="https://github.com/user-attachments/assets/d0bda3e3-6ded-4306-92d6-d7354693b3a4" width=150/>|<img src="https://github.com/user-attachments/assets/73b67212-1e6e-4374-9279-4d8b534365dc" width="150"/> | <img src="https://github.com/user-attachments/assets/b1107d22-0922-49bd-a631-22659a6c3ec4"  width="150"/>
 
 
 <details>
