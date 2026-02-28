@@ -62,8 +62,9 @@ Pada tampilan awal, sudah diperlihatkan pada AppBar ada nama aplikasi dan jumlah
 | <img src="https://github.com/user-attachments/assets/d0c935ac-445b-4400-956a-e366cdb3cec5" width="150"/> | <img src="https://github.com/user-attachments/assets/ab4e424f-5443-40a4-8c95-2ca352880fc5" width="150"/> | <img src="https://github.com/user-attachments/assets/8ae6f8d4-efdb-490c-bc00-7420fd13025b" width="150"/> |
 
 
+
 <details>
-    <summary> Deskripsi Implementasi Widget </summary>
+    <summary> **Deskripsi Implementasi Widget** </summary>
 
 ### 1. `Teks`
 **Penjelasan:** Widget dasar untuk menampilkan teks. Digunakan di seluruh halaman seperti judul buku, nama penulis, label, persentase progress, hingga pesan empty state.
@@ -329,8 +330,9 @@ Halaman detail bisa diakses dengan klik card buku yang sudah dibuat. Detail memp
 |----------|------------|-----------|-----------|
 | <img src="https://github.com/user-attachments/assets/2fcc1426-614c-4763-a627-43fd344a3d9e" width="150"/> | <img src="https://github.com/user-attachments/assets/f0474134-5e7a-423e-8d9c-49a0b9d189bd" width="150"/> | <img src="https://github.com/user-attachments/assets/79591258-6ba1-41f3-9874-b1fd379c1a29" width="150"/> | <img src="https://github.com/user-attachments/assets/5e953e1b-c4c5-4b60-b9b2-fcfa168dc831" width=150/>
 
+
 <details>
-    <summary> Deskripsi Implementasi Widget </summary>
+    <summary> **Deskripsi Implementasi Widget** </summary>
 
 ### 1. `OutlinedButton`
 
@@ -365,7 +367,7 @@ Halaman `Form` bisa diakses dari **fitur** `edit` di halaman `detail` atau dari 
 
 
 <details>
-    <summary> Deskripsi Implementasi Widget </summary>
+    <summary> **Deskripsi Implementasi Widget** </summary>
 
 ### 1. `StatefulWidget`
 
