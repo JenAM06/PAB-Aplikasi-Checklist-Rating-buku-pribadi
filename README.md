@@ -64,7 +64,7 @@ Pada tampilan awal, sudah diperlihatkan pada AppBar ada nama aplikasi dan jumlah
 
 
 <details>
-    <summary> **Deskripsi Implementasi Widget** </summary>
+    <summary> Deskripsi Implementasi Widget</summary>
 
 ### 1. `Teks`
 **Penjelasan:** Widget dasar untuk menampilkan teks. Digunakan di seluruh halaman seperti judul buku, nama penulis, label, persentase progress, hingga pesan empty state.
@@ -332,7 +332,7 @@ Halaman detail bisa diakses dengan klik card buku yang sudah dibuat. Detail memp
 
 
 <details>
-    <summary> **Deskripsi Implementasi Widget** </summary>
+    <summary> Deskripsi Implementasi Widget </summary>
 
 ### 1. `OutlinedButton`
 
@@ -367,7 +367,7 @@ Halaman `Form` bisa diakses dari **fitur** `edit` di halaman `detail` atau dari 
 
 
 <details>
-    <summary> **Deskripsi Implementasi Widget** </summary>
+    <summary> Deskripsi Implementasi Widget </summary>
 
 ### 1. `StatefulWidget`
 
